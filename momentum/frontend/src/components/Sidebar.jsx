@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FiHome, FiPlusCircle, FiMoon, FiSun, FiLogOut } from "react-icons/fi";
+import { FiHome, FiPlusCircle, FiMoon, FiSun, FiLogOut, FiTrendingUp, FiClock, FiBell, FiBarChart2 } from "react-icons/fi";
 
 const Sidebar = ({ setDarkMode, darkMode }) => {
   return (
@@ -28,6 +28,42 @@ const Sidebar = ({ setDarkMode, darkMode }) => {
               dark:text-white hover:bg-pink-300 dark:hover:bg-purple-700 rounded-md transition-all duration-500"
             >
               <FiPlusCircle className="mr-2" /> Add Habit
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/streaks"
+              className="flex items-center px-4 py-2 text-lg font-medium text-purple-900 
+              dark:text-white hover:bg-pink-300 dark:hover:bg-purple-700 rounded-md transition-all duration-500"
+            >
+              <FiTrendingUp className="mr-2" /> Streaks
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/pomodoro"
+              className="flex items-center px-4 py-2 text-lg font-medium text-purple-900 
+              dark:text-white hover:bg-pink-300 dark:hover:bg-purple-700 rounded-md transition-all duration-500"
+            >
+              <FiClock className="mr-2" /> Pomodoro Timer
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/reminders"
+              className="flex items-center px-4 py-2 text-lg font-medium text-purple-900 
+              dark:text-white hover:bg-pink-300 dark:hover:bg-purple-700 rounded-md transition-all duration-500"
+            >
+              <FiBell className="mr-2" /> Reminders
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/insights"
+              className="flex items-center px-4 py-2 text-lg font-medium text-purple-900 
+              dark:text-white hover:bg-pink-300 dark:hover:bg-purple-700 rounded-md transition-all duration-500"
+            >
+              <FiBarChart2 className="mr-2" /> Insights
             </Link>
           </li>
         </ul>
